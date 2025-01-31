@@ -4,10 +4,6 @@ import controllerHandler from './utils/routers-handler.js'
 import {database_connection} from './DB/connection.js'
 import { config } from 'dotenv'
 
-/**
- * 
- * @description - start the server
- */
 const bootstrap = async () => {
     const app = express()
     config()

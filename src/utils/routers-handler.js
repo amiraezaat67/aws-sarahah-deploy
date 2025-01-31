@@ -3,7 +3,8 @@ import { globalErrorHandler } from '../Middleware/errr-handler.middleware.js'
 import * as controllers from  '../Modules/index.js'
 
 const controllerHandler = (app) =>{
-    
+     console.log('controllers');
+     
     app.use('/auth', controllers.authRouter)
     app.use('/messages', controllers.messageController )
     app.use('/user', controllers.userController)
